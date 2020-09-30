@@ -1,0 +1,24 @@
+{
+  "name": "clash-team-page",
+  "version": "1.0.0",
+  "description": "Clash team page presentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smlc/LolClashTeamPage.git"
+  },
+  "author": "MarS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smlc/LolClashTeamPage/issues"
+  },
+  "homepage": "https://github.com/smlc/LolClashTeamPage#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss-cli": "^8.0.0",
+    "tailwindcss": "^1.8.10"
+  }
+}
