@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="stylesheet" href="/build/tailwind.css" />
+
+    <title>Lol Clash Team</title>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js"
+      defer
+    ></script>
+  </head>
+  <body class="bg-gray-900 h-screen">
+    <div class="mx-8 sm:w-3/4 sm:mx-auto">
+      <div class="sm:flex sm:mt-16">
+        <div class="sm:w-1/2">
+          <h1
+            class="text-xl leading-9 font-semibold font-display text-white sm:mt-6 sm:text-xl sm:leading-10 xl:text-2xl xl:leading-none sm:pt-2"
+          >
+            Team Solo Feed Mid
+          </h1>
+        </div>
+        <div class="sm:w-1/2">
+          <h1
+            class="text-white text-lg align-baseline leading-9 font-semibold font-display sm:pt-8"
+          >
+            Qui sont t-il
+          </h1>
+          <p class="text-gray-300">
+            Tous niveau Challenger mais le challenge se trouve en Bronze.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mx-8 mt-12 sm:w-3/4 sm:mx-auto grid grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8"
+    >
+      <div x-data="{ showDescription: false }">
+        <img
+          @mouseenter=" showDescription= true"
+          @mouseleave=" showDescription= false"
+          class="hover:opacity-25"
+          src="/img/Twisted_Fate.jpg"
+          alt="Twisted Fate"
+        />
+        <strong><p class="mt-2 text-white">P I R A I N G</p></strong>
+        <div
+          x-show="showDescription"
+          class="text-xs -mt-32 sm:text-lg text-white text-center"
+        >
+          <div>Point fort : Joue Zed jungle</div>
+          <div>Point faible : Joue à Shadow Legend</div>
+        </div>
+      </div>
+      <div class="mt-16 sm:mt-24" x-data="{ showDescription: false }">
+        <img
+          src="/img/Ezreal.jpeg"
+          @mouseenter=" showDescription= true"
+          @mouseleave=" showDescription= false"
+          class="hover:opacity-25"
+        />
+        <strong><p class="mt-2 text-white">MarS XIV</p></strong>
+      </div>
+      <div x-data="{ showDescription: false }">
+        <img
+          src="/img/Rumble.jpg"
+          @mouseenter=" showDescription= true"
+          @mouseleave=" showDescription= false"
+          class="hover:opacity-25"
+        /><strong><p class="text-white mt-2">LeKèkecè</p></strong>
+        <div
+          x-show="showDescription"
+          class="text-xs -mt-32 sm:-mt-0 sm:text-lg text-white text-center"
+        >
+          <div>Point fort : Joue Zed jungle</div>
+          <div>Point faible : Joue à Shadow Legend</div>
+        </div>
+      </div>
+      <div class="mt-16 sm:mt-0">
+        <img src="/img/Swain.jpg" /><strong
+          ><p class="text-white mt-2">Alizarin Crimson</p></strong
+        >
+      </div>
+      <div class="mt-0 sm:mt-64">
+        <img src="/img/Maokai.jpg" /><strong
+          ><p class="text-white mt-2">ryu973</p></strong
+        >
+      </div>
+      <div class="mt-16 sm:mt-0">
+        <img src="/img/KhaZix.jpg" /><strong
+          ><p class="text-white mt-2">guyanaismile973</p></strong
+        >
+      </div>
+    </div>
+  </body>
+</html>
