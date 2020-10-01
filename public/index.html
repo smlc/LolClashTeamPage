@@ -54,19 +54,31 @@
           x-show="showDescription"
           class="text-xs -mt-32 sm:text-lg text-white text-center"
         >
-          <div>Point fort : Joue Zed jungle</div>
-          <div>Point faible : Joue à Shadow Legend</div>
+          <div>Point fort : Joue Zed jungle.</div>
+          <div>Point faible : Joue à Shadow Legend.</div>
         </div>
       </div>
+
       <div class="mt-16 sm:mt-24" x-data="{ showDescription: false }">
-        <img
-          src="/img/Ezreal.jpeg"
-          @mouseenter=" showDescription= true"
-          @mouseleave=" showDescription= false"
-          class="hover:opacity-25"
-        />
-        <strong><p class="mt-2 text-white">MarS XIV</p></strong>
+        <div class="relative">
+
+          <img
+            src="/img/Ezreal.jpeg"
+            @mouseenter=" showDescription= true"
+            @mouseleave=" showDescription= false"
+            class="hover:opacity-25"
+          />
+          <strong><p class="mt-2 text-white">MarS XIV</p></strong>
+          <div
+            x-show="showDescription"
+            class="text-xs -mt-40 absolute sm:text-lg text-white text-center select-none"
+          >
+            <div>Point fort : Peut pick Samira en soloQ.</div>
+            <div>Point faible : Trop fort sur Hecarim.</div>
+          </div>
+        </div>
       </div>
+
       <div x-data="{ showDescription: false }">
         <img
           src="/img/Rumble.jpg"
@@ -78,24 +90,65 @@
           x-show="showDescription"
           class="text-xs -mt-32 sm:-mt-0 sm:text-lg text-white text-center"
         >
-          <div>Point fort : Joue Zed jungle</div>
-          <div>Point faible : Joue à Shadow Legend</div>
+          <div>Point fort : Fait des barbecue à l'ananas</div>
+          <div>Point faible : Joue Braum mid</div>
         </div>
       </div>
-      <div class="mt-16 sm:mt-0">
-        <img src="/img/Swain.jpg" /><strong
-          ><p class="text-white mt-2">Alizarin Crimson</p></strong
-        >
+
+      <div class="mt-16 sm:mt-0" x-data="{ showDescription: false }">
+        <div class="relative">
+          <img
+            src="/img/Swain.jpg"
+            @mouseenter=" showDescription= true"
+            @mouseleave=" showDescription= false"
+            class="hover:opacity-25"
+          /><strong><p class="text-white mt-2">Alizarin Crimson</p></strong>
+          <div
+            x-show="showDescription"
+            class="text-xs absolute -mt-40 sm:text-lg text-white text-center"
+          >
+            <div>Point fort : Atteint le level 16 de Kayle avant le FF.</div>
+            <div>Point faible : Joue des champions a power spike level 16.</div>
+          </div>
+        </div>
       </div>
-      <div class="mt-0 sm:mt-64">
-        <img src="/img/Maokai.jpg" /><strong
-          ><p class="text-white mt-2">ryu973</p></strong
-        >
+
+      <div class="mt-0 sm:mt-24" x-data="{ showDescription: false }">
+        <div class="relative">
+          <img
+            src="/img/Maokai.jpg"
+            @mouseenter=" showDescription= true"
+            @mouseleave=" showDescription= false"
+            class="hover:opacity-25"
+          />
+          <strong><p class="text-white mt-2">ryu973</p></strong>
+          <div
+            x-show="showDescription"
+            class="text-xs absolute -mt-40 sm:text-lg text-white text-center"
+          >
+            <div>Point fort : Joue support.</div>
+            <div>
+              Point faible : Achtète des rabadon avec l'argent des Pink ward.
+              (Rend l'argent)
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mt-16 sm:mt-0">
-        <img src="/img/KhaZix.jpg" /><strong
-          ><p class="text-white mt-2">guyanaismile973</p></strong
+
+      <div class="mt-16 sm:mt-0" x-data="{ showDescription: false }">
+        <img
+          src="/img/KhaZix.jpg"
+          @mouseenter=" showDescription= true"
+          @mouseleave=" showDescription= false"
+          class="hover:opacity-25"
+        /><strong><p class="text-white mt-2">guyanaismile973</p></strong>
+        <div
+          x-show="showDescription"
+          class="text-xs -mt-40 sm:text-lg text-white text-center"
         >
+          <div>Point fort : Joue avec 300 ping depuis la Guyane</div>
+          <div>Point faible : Soutien humanitaire en Bronze I depuis 1862</div>
+        </div>
       </div>
     </div>
   </body>
